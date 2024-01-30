@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+</head>
+<style>
+     ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1A2980;  
+  background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+  background: linear-gradient(to right, #26D0CE, #3042ac); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1A2980;  
+  background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+  background: linear-gradient(to right, #26D0CE, #3042ac); 
+}
+#img123{
+  width: 100%;
+  height: 700px;
+}
+#head2{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.para1{
+  display: flex;
+  text-align: justify;
+
+}
+@keyframes animationname {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+} 
+#head2{
+    animation: slide  3s;
+   
+}
+ 
+@keyframes slide {
+    from {
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+     }
+} 
+#head2{
+    animation: fadeInLeft  2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;    
+}
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+} 
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+#img12{
+  width: 300px;
+  height: 300px;
+}
+.two{
+  margin-left: auto;
+  width: 400px;
+  margin-right: auto;
+}
+</style>
+<body>
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/o_whale-removebg-preview.png" class="img-fluid" alt="Responsive image" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" id="anc">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" id="anc">GALLERY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  EXPLORE
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">FISH</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">REPTILES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">MAMMALS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">SHARK</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">WHALES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">DOLPHIN</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="anc">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" id="anc">ABOUT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <!-- carousale -->
+    <h2 class="display-3" id="head2">Pics Of Aquarium</h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="img123" src="about/aq1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img id="img123" src="about/aq2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img id="img123" src="about/david-hiepler-fritz-brunier-georgia-aquarium-1.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<h2 class="display-3" id="head2">OUR STORY</h2>
+<div class="container">
+  <p class="para1">We are having a great Summer here at Ocean Academy,s ESY Program. This week we went on our annual trip to Jenkinson’s Aquarium in Point Pleasant Beach. The students and staff split up into two groups and were led on an awesome tour to see the animals and marine life. Among them where exhibits of exotic fish, coral reefs, seals, penguins, and many other animals from around the world. There was also a rainforest area with parrots and monkeys coupled with a pine barrens section with turtles, frogs, and owls.These exhibits gave the students the opportunity to get up close and personal with the animals and learn about their natural habitats, diets, and unique personalities.
+
+  A highlight of the group tour was the touch tank in which we got the chance to touch live animals such as starfish, horseshoe crab, and stingray.. After the tour was over, we walked along the boardwalk and down to the inlet to take in some beautiful views and watch the boats sail by. It was a great trip and we are looking forward to the next one as the Summer fun continues.
+</p>
+</div>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="row justify-content-center">
+  <div class="col-12 col-lg-4 col-lg-6">
+    <!-- Section Heading-->
+    <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+      <h3>Our Creative <span> Team</span></h3>
+      <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+<div class="container">
+       
+        <div class="row">
+          <!-- Single Advisor-->
+          <div class="col-6 two">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img id="img12" src="about/Edit Bitmoji • Bitmoji - Google Chrome 12_26_2023 4_07_15 PM (2).png
+                " alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>NAWABZADA SIKANDAR</h6>
+                <p class="designation">LEADER</p>
+                <p class="designation"></p>
+              </div>
+            </div>
+          </div>
+                    <!-- Single Advisor-->
+          <div class="col-6 two">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img id="img12" src="about/SAAD MUSTAAQ.png" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>SAAD MUSTAAQ</h6>
+                <p class="designation">DESIGNER</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-lg-4 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img id="img12" src="about/Edit-Bitmoji-•-Bitmoji (1).png" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>MOHAMMED MOAZZAM</h6>
+                <p class="designation">SENIOR DEVELOPER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+
+              <div class="advisor_thumb"><img id="img12" src="about/haris.jpg" alt="">
+          
+                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+
+              <div class="single_advisor_details_info">
+                <h6>HARIS MUNEER</h6>
+                <p class="designation"> JUNIOR Developer</p>
+              </div>
+            </div>
+          </div>
+     
+          <div class="col-12 col-lg-4 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img id="img12" src="about/uzair.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>UZAIR KHAN</h6>
+                <p class="designation">CONTENT CREATER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- footer -->
+<footer class="text-center bg-body-tertiary">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark">
+        <i class="fab fa-github"></i
+      ></a>
+      
+    </section>
+  </div>
+  <div class="text-center p-3" id="foot">
+    © 2023 Copyright:Jenkinson Sea Life
+  </div>
+</footer>
+
+</body>
+</html>

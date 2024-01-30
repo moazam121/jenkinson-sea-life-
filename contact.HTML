@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="events.css">
+    <script src="contact.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="img/o_whale-removebg-preview.png" class="img-fluid" alt="Responsive image"  >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" id="anc">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" id="anc">GALLERY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  EXPLORE
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="fish.html">FISHES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="MAMMALS.html">MARINE MAMMALS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="shark.html">SHARKS</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="whale.html">WHALES</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="dolphin.html">DOLPHINS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.HTML" id="anc">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" id="anc">ABOUT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </div> 
+    <section class="contact">
+        <div class="content">
+            <h2 id="head">Get In Touch</h2>
+            <p id="para12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis quibusdam molestias doloremque officiis possimus blanditiis corrupti suscipit doloribus sapiente, temporibus assumenda dignissimos laudantium tempora consectetur ducimus exercitationem voluptas quos.</p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <P id="para">(TTS) 3-5 Lab 16 Aptech North Nazimabad Center,Karachi.</P>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>phone</h3>
+                        <P id="para">0323-1202214</P>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <P id="para">jenkinsonsealife@gmail.com</P>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="" method="post" name="form1">
+                    <h2>SEND MESSAGE</h2>
+                    <div class="inputBox">
+                      <input type="text" id="fn" required="required" placeholder="Full Name">
+                        <label for="" id="fnm"></label>
+                    </div>
+                    <div class="inputBox">
+                      <input type="email"  id="em" required="required"  placeholder="Email">
+                        <label for="" id="eml"></label>
+                        
+
+                    </div>
+                    <div class="inputBox">
+                      <textarea name="" id="tx"  placeholder="Type Your Message"></textarea>
+                        <label for="" id="txt"></label>
+
+                    </div>
+
+                    <div class="rating-container">
+                        <p>Rate Us</p>
+                        <span class="rating-stars" onclick="setRating(1)">☆</span>
+                        <span class="rating-stars" onclick="setRating(2)">☆</span>
+                        <span class="rating-stars" onclick="setRating(3)">☆</span>
+                        <span class="rating-stars" onclick="setRating(4)">☆</span>
+                        <span class="rating-stars" onclick="setRating(5)">☆</span>
+                        <p>Your rating: <span id="selected-rating">0</span></p>
+                    </div>
+                    <div class="inputBox">
+                      <input type="button" name="" value="Send" id="btn1" onclick="validate()" >
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+  <script>
+    function validate(){
+      var firstname =form1.fn.value;
+      var email =form1.em.value;
+      var msg =form1.tx.value;
+
+      if(firstname == 0){
+        document.getElementById("fnm").innerHTML =" Enter Full Name";
+        document.getElementById("fnm").style.color = "red";
+        document.getElementById("fn").style.borderColor ="red";
+      }else if(firstname !== 0){
+        document.getElementById("fnm").innerhtml = "";
+        document.getElementById("fn").style.borderColor ="green";
+      }
+
+      if(email== 0){
+        document.getElementById("eml").innerHTML =" Enter Email";
+        document.getElementById("eml").style.color = "red";
+        document.getElementById("em").style.borderColor ="red";
+      }else if(email !== 0){
+        document.getElementById("eml").innerhtml = "";
+        document.getElementById("em").style.borderColor ="green";
+      }
+
+      if(msg == 0){
+        document.getElementById("txt").innerHTML ="Enter Message";
+        document.getElementById("txt").style.color = "red";
+        document.getElementById("tx").style.borderColor ="red";
+      }else if(firstname !== 0){
+        document.getElementById("txt").innerhtml = "";
+        document.getElementById("tx").style.borderColor ="green";
+      }
+    }
+  </script>
+    <!-- footer -->
+    
+    <footer class="text-center bg-body-tertiary">
+      <div class="text">
+          
+        <P id="para" class="text-dark"> <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/marker.png" alt="marker"/> (TTS) 3-5 Lab 16 Aptech North Nazimabad Center,Karachi.</P>
+      </div>
+ 
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/facebook-new.png" alt="facebook-new"/></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="26" height="26" src="https://img.icons8.com/android/24/twitter.png" alt="twitter"/></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="26" height="26" src="https://img.icons8.com/material-rounded/24/google-logo.png" alt="google-logo"/></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="26" height="26" src="https://img.icons8.com/material-rounded/24/instagram-new.png" alt="instagram-new"/></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="24" height="24" src="https://img.icons8.com/metro/26/linkedin.png" alt="linkedin"/></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><img width="30" height="30" src="https://img.icons8.com/windows/32/github.png" alt="github"/></a>
+          
+        </section> 
+      </div>
+      <div class="text-center p-3" id="foot">
+        © 2023 Copyright:Jenkinson Sea Life
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,327 @@
+#btn1 {
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px  20px;
+    background: #1A2980;  
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+    background: linear-gradient(to right, #26D0CE, #3042ac); 
+
+}
+.text-dark{
+    padding-top: 90px;
+}
+
+@media screen and (max-width: 600px) {
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+ .rating-container {
+    text-align: center;
+}
+
+.rating-stars {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.rating-stars:hover,
+.rated-stars {
+    color: orange;
+}
+p{
+    color: black;
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+     padding: 50px 100px;
+     display: flex;
+     justify-content:center ;
+     align-items: center;
+     flex-direction: column;
+     background: url("img/contact1.jpg");
+     background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    -webkit-text-stroke:0.1vw ;
+
+}
+.contact .content p{
+    font-weight: 300;
+    font-size: 20px;
+}
+#para{
+    font-size: 20px;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactinfo .box .icon{
+    min-height: 50px;
+    height: 50px;
+    width: 50px;
+    background: #fff; 
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left:20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputBox{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactform .inputBox span,label{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputBox input[type="button"]{
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,.contactform{
+        width: 100%;
+    }
+}
+/* navbar */
+.navbar{
+    background: #1A2980;  
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+    background: linear-gradient(to right, #26D0CE, #3042ac); 
+  } 
+  @keyframes animationname {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  } 
+  #anc,#navbarDropdown {
+    animation: slide  3s;
+   
+  }
+  @keyframes slideup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  } 
+  #anc:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #10b5b2ed;
+    margin: auto;
+    display: block;
+  }
+  #anc:hover:after{
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  @keyframes slide {
+    from {
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+     }
+  } 
+  .img-fluid{
+    width: 120px;
+    height: 100px;
+}
+  
+  .navbar-collapse {
+    animation: animationname  3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  #anc{
+    color : black ;
+    font-size: x-large; 
+    -webkit-text-stroke: 0.1vw;
+  } 
+  
+  
+  #navbarDropdown{
+    font-size: x-large; 
+    color : black ;
+    -webkit-text-stroke: 0.1vw;
+  
+  }
+  
+#head{
+    animation: fadeInLeft  2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;    
+}
+
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+
+.dropdown-menu{
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #3042ac); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    
+}footer{
+    background: #1A2980;  
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+    background: linear-gradient(to right, #26D0CE, #3042ac);
+}
+  #foot{
+    font-size: 20px;
+
+  }
+
+  #para12{
+    text-align: justify;
+  }

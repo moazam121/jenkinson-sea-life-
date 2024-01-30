@@ -1,0 +1,118 @@
+#card-btn{
+    padding: 6px;
+    margin: 10px;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+  .card {
+    border: none;
+  }
+  .card-img {
+    border-radius: 0;
+  }
+  .card:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+ .text-dark{
+  padding-top: 90px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  #card1{
+    padding-left: 10px;
+    padding-top: 10px;
+  }  
+#card2{
+    padding-left: 10px;
+
+}
+ 
+  .vgr-cards {
+    .card {
+      display: flex;
+      flex-flow: wrap;
+      flex: 100%;
+      margin-bottom: 40px;
+  
+      &:nth-child(even) .card-img-body {
+        order: 2;
+      }
+  
+      &:nth-child(even) .card-body {
+        padding-left: 0;
+        padding-right: 1.25rem; 
+      }
+      
+      @media (max-width: 576px) {
+        display: block;
+      }
+      
+    }
+  
+    .card-img-body {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      
+      @media (max-width: 576px) {
+        width: 100%;
+        height: 200px;
+            margin-bottom: 20px;
+      }
+      
+    }
+    
+    .card-img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      
+      @media (max-width: 1140px) {
+            margin: 0;
+      transform: none;
+      width: 100%;
+      height: auto;
+      }
+      
+    }
+  
+    .card-body {
+      flex: 2;
+      padding: 0 0 0 1.25rem;
+      
+      @media (max-width: 576px) {
+        padding: 0;
+      }
+      
+    }
+  }
+  
+
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1A2980;  
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+    background: linear-gradient(to right, #26D0CE, #3042ac); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1A2980;  
+    background: -webkit-linear-gradient(to right, #26D0CE, #3042ac);  
+    background: linear-gradient(to right, #26D0CE, #3042ac); 
+  }
